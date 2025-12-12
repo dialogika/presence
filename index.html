@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Presensi | Kursus Public Speaking Dialogika</title>
+  <meta name="description"
+    content="Pelatihan, In House Training, Seminar, Workshop untuk Bangun Karyawan Yang Tangguh dan Memiliki Skill untuk menunjang kinerja perusahaan Anda" />
+  <meta name="keywords" content="skill, public speaking, training, kelas, pelatihan, inhouse training" />
+  <meta name="author" content="Dialogika" />
+
+  <!-- Favicons -->
+  <!-- Font Awesome CDN -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- OG Meta Tags to share -->
+  <meta property="og:site_name" content="Kelas Public Speaking" />
+  <meta property="og:site" content="www.dialogika.co" />
+  <meta property="og:title" content="Kelas Karyawan Perusahaan | Kursus Public Speaking Dialogika" />
+  <meta property="og:description" content="Pelatihan, In House Training, Seminar, Workshop untuk Bangun Karyawan Yang Tangguh dan Memiliki Skill untuk menunjang kinerja perusahaan Anda" />
+  <meta property="og:image" content="assets/img/hero-bg.webp" />
+  <meta property="og:url" content="www.dialogika.co/corporate" />
+  <meta property="og:type" content="page" />
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+  <link href="assets/vendor/international-phone-number/intlTelInput.css" rel="stylesheet" />
+
+
+  <!-- Part CSS Files -->
+  <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet" />
+  <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet" />
+  <link href="assets/part/about-append/about.css" rel="stylesheet" />
+  <link href="assets/part/cta-append/cta.css" rel="stylesheet" />
+  <link href="assets/part/contact-append/contact.css" rel="stylesheet" />
+  <link href="assets/part/portfolio-insurin/portfolio.css" rel="stylesheet" />
+  <link href="assets/part/category/category.css" rel="stylesheet" />
+  <link href="assets/part/popup-box/popup.css" rel="stylesheet" />
+  <link href="assets/part/modals/modal.css" rel="stylesheet" />
+  <link href="assets/part/smooth-slider/smooth-slider.css" rel="stylesheet" />
+  <link href="assets/part/read-more/read-more_less.css" rel="stylesheet" />
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!--  ========================================================  -->
+  <!-- Spreadsheet API Form Pendaftaran -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function HeroForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+        type: "post",
+        data: $("#HeroForms").serializeArray(),
+        headers: {
+          accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+          secretKey: "68a998592183dc30cdc2b07576759f04"
+        },
+        success: function () {
+          alert(" Permintaan telah di submit :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        headers: {
+          accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+          secretKey: "68a998592183dc30cdc2b07576759f04"
+        },
+        success: function () {
+          alert("Anda Telah Mendaftar :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+
+    function Subcription() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/18511/",
+        type: "post",
+        data: $("#subcriptions").serializeArray(),
+        success: function () {
+          // $('#subcription-modal').modal('show');
+          // open("https://link.dialogika.co/open-whatsapp-group");
+          window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '916674555903437');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Pixel Quora -->
+  <!-- DO NOT MODIFY -->
+  <!-- Quora Pixel Code (JS Helper) -->
+  <script>
+    ! function (q, e, v, n, t, s) {
+      if (q.qp) return;
+      n = q.qp = function () {
+        n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+      };
+      n.queue = [];
+      t = document.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = document.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', 'cae6711903da464ab62f03df5f66aedc');
+    qp('track', 'ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+  <!-- End of Quora Pixel Code -->
+  <script>
+    qp('track', 'GenerateLead');
+  </script>
+  <!-- End Pixel Quora -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148836422-2');
+    gtag('config', 'G-HV60XT856G');
+  </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KGK9D6H');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 2828594,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <!-- End Hotjar -->
+  <!--  ========================================================  -->
+  <style>
+          :root {
+              /* Palette Warna Dialogika */
+              --dialogika-blue: #10316b;  /* Biru Tua */
+              --dialogika-dark: #0b2347;  /* Biru Lebih Gelap */
+              --dialogika-gold: #f39c12;  /* Emas/Orange */
+              --dialogika-gold-hover: #d35400;
+              
+          }
+
+          body.headmaster {
+              background-color: var(--bg-color);
+              font-family: 'Poppins', sans-serif;
+              color: #333;
+          }
+
+          .card-custom {
+              max-width: 500px;
+              margin: 40px auto;
+              border: none;
+              border-radius: 20px;
+              box-shadow: 0 15px 35px rgba(16, 49, 107, 0.1); /* Bayangan halus biru */
+              overflow: hidden;
+              background: white;
+          }
+
+          /* Header dengan Gradasi Biru Dialogika */
+          .header-bg {
+              background: linear-gradient(135deg, var(--dialogika-dark) 0%, var(--dialogika-blue) 100%);
+              color: white;
+              padding: 35px 20px;
+              text-align: center;
+              position: relative;
+          }
+
+          .header-bg h4 {
+              font-weight: 700;
+              letter-spacing: 0.5px;
+          }
+
+          .header-bg small {
+              opacity: 0.9;
+              font-weight: 400;
+          }
+
+          /* Badge Tanggal */
+          .badge-date {
+              background-color: rgba(255, 255, 255, 0.15);
+              backdrop-filter: blur(5px);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              color: #fff;
+              padding: 8px 16px;
+              border-radius: 50px;
+              font-weight: 500;
+              margin-top: 15px;
+              display: inline-block;
+          }
+
+          /* Form Styling */
+          .form-label {
+              color: var(--dialogika-blue);
+              font-size: 0.9rem;
+          }
+
+          .form-control, .form-select {
+              border-radius: 10px;
+              border: 1px solid #e0e0e0;
+              padding: 12px;
+              font-size: 0.95rem;
+          }
+
+          .form-control:focus, .form-select:focus {
+              border-color: var(--dialogika-blue);
+              box-shadow: 0 0 0 4px rgba(16, 49, 107, 0.1);
+          }
+
+          /* Radio Button Custom */
+          .form-check-input:checked {
+              background-color: var(--dialogika-blue);
+              border-color: var(--dialogika-blue);
+          }
+
+          /* Tombol Utama (Warna Emas/Orange Khas) */
+          .btn-submit {
+              background-color: var(--dialogika-gold);
+              color: white;
+              width: 100%;
+              padding: 14px;
+              border-radius: 12px;
+              font-weight: 600;
+              border: none;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+          }
+
+          .btn-submit:hover {
+              background-color: var(--dialogika-gold-hover);
+              transform: translateY(-2px);
+              box-shadow: 0 6px 20px rgba(211, 84, 0, 0.4);
+              color: white;
+          }
+          
+          .btn-submit:disabled {
+              background-color: #ccc;
+              transform: none;
+              box-shadow: none;
+          }
+
+          .hidden { display: none; }
+      </style>
+</head>
+
+<body>
+
+  <
+
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+  <main-header style=";"></main-header>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs" style="margin-top: 110px;">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center" >
+        <h2>Internship Program</h2>
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Presence</a></li>
+          <li><a href="index.html">Internship</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs Section -->
+
+  <main id="main">
+      <div class="container">
+          <div class="card card-custom">
+              <div class="header-bg">
+                  <!-- Logo Placeholder (Opsional) -->
+                   <img src="https://www.dialogika.co/assets/img/white-logo.webp" style="height:40px; margin-bottom:10px;">
+                  
+                  <h4 class="mb-1">PRESENSI INTERNSHIP</h4>
+                  
+                  <br>
+                  <div id="dateDisplay" class="badge-date"></div>
+                  <br><br>
+                  <small>PT Dialogika Persona Indonesia</small>
+              </div>
+              
+              <div class="card-body p-4 pt-5">
+                  
+                  <!-- Loading State -->
+                  <div id="loading" class="text-center py-3">
+                      <div class="spinner-border text-primary" role="status"></div>
+                      <p class="mt-3 text-muted small fw-bold">MEMUAT SISTEM...</p>
+                  </div>
+
+                  <!-- Blocked Message (Bukan Hari Kerja) -->
+                  <div id="blockedMsg" class="alert alert-warning hidden text-center border-0 shadow-sm" style="background-color: #fff3cd; color: #856404;">
+                      <strong>Maaf!</strong><br>Hari ini bukan jadwal operasional presensi.
+                  </div>
+
+                  <!-- FORM -->
+                  <form id="attendanceForm" class="hidden">
+                      
+                      <!-- 1. Nama Intern -->
+                      <div class="mb-4">
+                          <label class="fw-bold form-label">NAMA LENGKAP</label>
+                          <select class="form-select" id="inpName" required>
+                              <option value="" selected disabled>-- Pilih Nama Anda --</option>
+                              <option value="Clarissa Dwi Utari">Clarissa Dwi Utari</option>
+                              <option value="Fahmi Rizqullah Prasetyo">Fahmi Rizqullah Prasetyo</option>
+                              <option value="Tarri Afrianingsih">Tarri Afrianingsih</option>
+                              <option value="Kalika Rhea Nitara">Kalika Rhea Nitara</option>
+                              <option value="Valada Ladzie Finalia">Valada Ladzie Finalia</option>
+                              <option value="Maria Griselda">Maria Griselda</option>
+                              <option value="Zahwa Azelia Putri">Zahwa Azelia Putri</option>
+                              <option value="Kusumah Arya Panggiri">Kusumah Arya Panggiri</option>
+                              <option value="Rebecca Abigail">Rebecca Abigail</option>
+                              <option value="Arvin Andika Perdana">Arvin Andika Perdana</option>
+                              <option value="Amelia Miftakhus Sa'adah">Amelia Miftakhus Sa'adah</option>
+                              <option value="Maritza Syafa Aulia Lelono">Maritza Syafa Aulia Lelono</option>
+                              <option value="Galuh Karnia Sasmitya">Galuh Karnia Sasmitya</option>
+                              <option value="Devia Octavionica">Devia Octavionica</option>
+                              <option value="Ali Sulaiman">Ali Sulaiman</option>
+                              <option value="Alfi Fernandes">Alfi Fernandes</option>
+                              <option value="Scoolastica Devi Febriani">Scoolastica Devi Febriani</option>
+                              <option value="Nadia Shafira Yusticia">Nadia Shafira Yusticia</option>
+                              <option value="Afifah Rismayanti">Afifah Rismayanti</option>
+                              <option value="Mita Rifki Annisa">Mita Rifki Annisa</option>
+                              <option value="Frengky Lois Wongan">Frengky Lois Wongan</option>
+                              <option value="Arya Juni Prakoso">Arya Juni Prakoso</option>
+                              <option value="Firda Hasna Sidqi">Firda Hasna Sidqi</option>
+                              <option value="Faujiah">Faujiah</option>
+                              <option value="Aul">Aul</option>
+                              <option value="Elsa">Elsa</option>
+                              <option value="Aldora">Aldora</option>
+                          </select>
+                      </div>
+
+                      <!-- 2. Status -->
+                      <div class="mb-4">
+                          <label class="fw-bold form-label">STATUS KEHADIRAN</label>
+                          <div class="d-flex gap-3">
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="status" value="Hadir" checked onchange="toggleForm('Hadir')">
+                                  <label class="form-check-label fw-medium">Hadir</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="status" value="Izin" onchange="toggleForm('Izin')">
+                                  <label class="form-check-label fw-medium">Izin / Sakit</label>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- 3. Jam Masuk -->
+                      <div class="mb-4" id="groupTime">
+                          <label class="fw-bold form-label">JAM MASUK</label>
+                          <input type="time" class="form-control" id="inpTime">
+                          <div class="form-text text-primary fw-medium mt-2" id="scheduleText"></div>
+                      </div>
+
+                      <!-- 4. Alasan -->
+                      <div class="mb-4 hidden" id="groupReason">
+                          <label class="fw-bold form-label">ALASAN IZIN</label>
+                          <textarea class="form-control" id="inpReason" rows="3" placeholder="Jelaskan alasan izin Anda..."></textarea>
+                      </div>
+
+                      <!-- Alert Box -->
+                      <div id="alertBox"></div>
+
+                      <!-- Button -->
+                      <button type="submit" id="btnSubmit" class="btn btn-submit">KIRIM PRESENSI</button>
+                  </form>
+              </div>
+          </div>
+          
+          <div class="text-center pb-4">
+              <small class="text-muted" style="font-size: 0.7rem;">&copy; 2025 Dialogika Persona Indonesia</small>
+          </div>
+      </div>
+
+      <script>
+          // ===========================================
+          // ⚙️ KONFIGURASI BACKEND (Google Apps Script)
+          // ===========================================
+          
+          // URL Web App Google Script Anda
+          const BACKEND_URL = "https://script.google.com/macros/s/AKfycbyPUXK2NptrsbOEuAgEfo6S1sNDzaHVQbvwExoPyxk6aylvQ8xKSGu6uBcW6A7plu61/exec";
+
+          // ===========================================
+
+          // 1. Setup Waktu Jakarta
+          const now = new Date();
+          const jktTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Jakarta"}));
+          const day = jktTime.getDay();
+          const hh = String(jktTime.getHours()).padStart(2, '0');
+          const mm = String(jktTime.getMinutes()).padStart(2, '0');
+          
+          const daysName = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+          const todayStr = `${daysName[day]}, ${jktTime.toLocaleDateString('id-ID')}`;
+          
+          document.getElementById('dateDisplay').innerText = todayStr;
+
+          // 2. Logika Jadwal (Jumat = Testing)
+          let isWork = false;
+          let startHour = 0;
+          
+          if ([2, 4, 5].includes(day)) { // Selasa, Kamis, Jumat
+              isWork = true; startHour = 10;
+              document.getElementById('scheduleText').innerText =
+                  (day === 5) ? "ℹ️ Mode Testing (Jumat): 10:00 WIB" : "ℹ️ Jadwal Masuk: 10:00 WIB";
+          } else if ([0, 6].includes(day)) { // Sabtu, Minggu
+              isWork = true; startHour = 9;
+              document.getElementById('scheduleText').innerText = "ℹ️ Jadwal Masuk: 09:00 WIB";
+          }
+
+          // 3. Tampilkan Form
+          document.getElementById('loading').classList.add('hidden');
+          if (isWork) {
+              document.getElementById('attendanceForm').classList.remove('hidden');
+              document.getElementById('inpTime').value = `${hh}:${mm}`;
+          } else {
+              document.getElementById('blockedMsg').classList.remove('hidden');
+          }
+
+          // Toggle Status
+          window.toggleForm = (val) => {
+              const tBox = document.getElementById('groupTime');
+              const rBox = document.getElementById('groupReason');
+              if(val === 'Hadir') { tBox.classList.remove('hidden'); rBox.classList.add('hidden'); }
+              else { tBox.classList.add('hidden'); rBox.classList.remove('hidden'); }
+          };
+
+          // 4. SUBMIT DATA
+          document.getElementById('attendanceForm').addEventListener('submit', async (e) => {
+              e.preventDefault();
+              
+              const btn = document.getElementById('btnSubmit');
+              const originalText = btn.innerText;
+              btn.disabled = true; btn.innerText = "SEDANG MENGIRIM...";
+
+              // Ambil Data dari Input
+              const name = document.getElementById('inpName').value;
+              const status = document.querySelector('input[name="status"]:checked').value;
+              let timeVal = "-";
+              let reasonVal = "-";
+
+              // Validasi
+              if(status === 'Hadir') {
+                  timeVal = document.getElementById('inpTime').value;
+                  const [h, m] = timeVal.split(':').map(Number);
+                  if (h < (startHour - 2)) {
+                      showAlert('danger', 'Absen terlalu pagi, belum bisa diproses.');
+                      btn.disabled=false; btn.innerText=originalText; return;
+                  }
+              } else {
+                  reasonVal = document.getElementById('inpReason').value;
+                  if(!reasonVal) {
+                      showAlert('warning', 'Mohon isi alasan izin Anda.');
+                      btn.disabled=false; btn.innerText=originalText; return;
+                  }
+              }
+
+              // Siapkan Data untuk Backend
+              const payload = {
+                  name: `${name}`,
+                  description: `**Presensi Intern Dialogika**\nNama: ${name}\nTanggal: ${todayStr}\nJam: ${timeVal}\nStatus: ${status}\nAlasan: ${reasonVal}`,
+                  status: status,
+                  time: timeVal,
+                  reason: reasonVal
+              };
+
+              try {
+                  await fetch(BACKEND_URL, {
+                      method: "POST",
+                      mode: 'no-cors',
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(payload)
+                  });
+
+                  showAlert('success', '✅ Data terkirim! Silakan cek ClickUp.');
+                  document.getElementById('attendanceForm').reset();
+                  
+                  setTimeout(() => {
+                       document.querySelector('.card-body').innerHTML =
+                          '<div class="text-center py-5"><h1 style="font-size: 4rem;">🎉</h1><h3 class="mt-3 text-dark fw-bold">Terima Kasih</h3><p class="text-muted">Presensi Anda telah berhasil dicatat.</p></div>';
+                  }, 1500);
+
+              } catch (error) {
+                  console.error(error);
+                  showAlert('danger', 'Gagal koneksi internet. Coba lagi.');
+                  btn.disabled = false; btn.innerText = originalText;
+              }
+          });
+
+          function showAlert(type, msg) {
+              document.getElementById('alertBox').innerHTML = `
+                  <div class="alert alert-${type} alert-dismissible fade show border-0 shadow-sm">
+                      ${msg}
+                      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                  </div>
+              `;
+          }
+      </script>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer & Counter Area ======= -->
+  <main-footer></main-footer>
+  <!-- ======= End Footer & Counter Area ======= -->
+
+  <footer-modal></footer-modal>
+
+  <a href="#exampleModal" data-bs-toggle="modal" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bx bxl-whatsapp bx-tada"></i></a>
+
+  <!-- Modal 2 -->
+  <div class="modal popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+      <div class="modal-content popup-box-content">
+        <div class="popup-card" style="width:100%">
+          <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
+              class="fa-solid fa-xmark"></i></button>
+          <img src="assets/img/shape/popup.jpg" class="card-img-top" alt=""
+            style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+          <div class="card-body popup-card-body">
+
+          </div>
+          <form action="javascript:void" method="post" id="heroForm" enctype="text/plain" class="popup-form">
+            <div class="row gy-3 mb-3">
+              <div class="col-lg-6">
+                <label for="names" class="form-label">Full Name</label>
+                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}"
+                  placeholder="Nama Lengkap*" required>
+              </div>
+              <div class="col-lg-6">
+                <label for="locations" class="form-label">Lokasi</label>
+                <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}"
+                  placeholder="Kota*" required>
+              </div>
+              <div class="col-lg-6">
+                <label for="whatsapps" class="form-label">Whatsapp</label>
+                <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}"
+                  placeholder="Whatsapp*" required="">
+              </div>
+              <div class="col-lg-6">
+                <label for="events" class="form-label">Needs</label>
+                <input type="text" name="Event" class="form-control" id="events" placeholder="Kebutuhan">
+              </div>
+              <select class="d-none" name="Timestamp">
+                <option id="timestamp"></option>
+              </select>
+            </div>
+            <button class="custom-btn2 send_contact" id="submits" onclick="HeroForm()">Send Whatsapp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Part JS Files -->
+  <script src="assets/part/modals/modal-component.js"></script>
+  <script src="assets/part/smooth-slider/smooth-slider.js"></script>
+  <script src="assets/part/whatsapp/whatsapp.js"></script>
+  <script src="assets/part/read-more/read-more_less.js"></script>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/international-phone-number/script.js"></script>
+  <script src="assets/vendor/international-phone-number/intlTelInput.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/headerfooter.js"></script>
+  <script src="assets/js/timestamp.js"></script>
+  <!-- <script src="assets/js/whatsapp.js"></script> -->
+  <script src="assets/js/clickup-task.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
