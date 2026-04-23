@@ -531,13 +531,35 @@
                       
                       const allNames = data.allNames || [];
                       const submitted = data.submittedNames || [];
+                      const inactiveNames = [
+                          "Aisah Benita Wibowo",
+                          "Alisha Khansa Agnadiva",
+                          "Almira Pradipta Ihsani",
+                          "Anandin Kanchana Putri Aji",
+                          "Anggun Winda Savira",
+                          "Arif Tirtana",
+                          "Awvaylayssa Agno Putri",
+                          "Brigita Andari Hayuani",
+                          "Chua Vernand Jo",
+                          "Devi Nia Oktaviani Rumahorbo",
+                          "Eka Wulandari",
+                          "ERCITANIA MERDEKAWATI HARIS",
+                          "FaizaH Maulina Anjani",
+                          "Husyen Ali Alhabsy",
+                          "Joy Eunike",
+                          "Kathryn Naomi Sandrina Tambunan",
+                          "Khoirunnas Muhamad Irsyad Mujaka",
+                          "Leticia Amora Loviani Br Perangin Angin",
+                          "Maragaretha Poetri Amanda",
+                          "Muhammad Faiz Atmaja",
+                          "Nafira Syaninditya Kinanti"
+                      ];
 
                       let availableCount = 0;
 
                       if(allNames.length > 0) {
                           allNames.forEach(nama => {
-                              // Filter: Jangan tampilkan nama yang sudah absen
-                              if (!submitted.includes(nama)) {
+                              if (!submitted.includes(nama) && !inactiveNames.includes(nama)) {
                                   const opt = document.createElement('option');
                                   opt.value = nama; opt.text = nama;
                                   nameSelect.appendChild(opt);
@@ -547,7 +569,6 @@
 
                           statusMsg.classList.add('hidden');
                           
-                          // Jika semua orang sudah absen
                           if (availableCount === 0) {
                               nameSelect.innerHTML = '<option disabled>Semua intern sudah absen hari ini</option>';
                           }
